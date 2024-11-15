@@ -1,20 +1,18 @@
 //
-// Created by 黄展博 on 2024/11/15.
-//
 /*
+ Created by 黄展博 on 2024/11/15.
  这个程序主要是用来进行冒泡排序在郝斌老师P165的冒泡排序的基础上进行了改进
  让用户可以自己来确定自己要进行排序的数组
  */
-
 # include <stdio.h>
 
 void sort(int * p, int a)
 {
     int g, o, l, w;
 
-    for(g = 1;g < a;++g)
+    for(g = 1; g < a; ++g)
     {
-        for(l = 0;l < a - g;++l)
+        for(l = 0; l < a - g; ++l)
         {
             if(p[l] > p[l + 1])
             {
@@ -24,10 +22,7 @@ void sort(int * p, int a)
             }
         }
     }
-
 }
-
-
 
 int main(void)
 {
@@ -52,8 +47,6 @@ int main(void)
         printf("%d\n",a[i]);
 
     }
-
-
 
     return 0;
 }
