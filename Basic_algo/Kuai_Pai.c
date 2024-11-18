@@ -1,6 +1,4 @@
-//
 // Created by 黄展博 on 2024/11/17.
-//
 #include <stdio.h>
 #include <stdbool.h>
 #include <mm_malloc.h>
