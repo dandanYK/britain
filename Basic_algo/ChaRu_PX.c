@@ -11,8 +11,10 @@ void sort(int arr[], int n)
      int i;
      while (SortedIndex < n)
      {
+         //从SortedIndex开始，一直到数组末尾，进行排序,i就是控制这个循环的变量
          for (i = SortedIndex; i > 0; i--)
          {
+             //每次进行比较就是看前一个数是否比后一个数小，如果小，就交换位置，所以应该是i < i - 1
              if (arr[i] < arr[i - 1])
              {
                  swap(&arr[i], &arr[i - 1]);
